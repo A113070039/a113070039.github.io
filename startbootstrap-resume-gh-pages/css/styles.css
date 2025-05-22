@@ -10927,17 +10927,18 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #FF95CA;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #495057;
 }
 
 .dev-icons {
@@ -11059,6 +11060,16 @@ body, p, h1, h2, h3, h4, h5, h6, .card-body, .resume-section-content {
 }
 
 .flip-card-front {
-  color: #cc3366; /* 粉紫色 */
+  color: #cc3366;
   font-weight: bold;
 }
+
+.social-icons a i {
+  color: #FF95CA !important;
+  transition: color 0.3s;
+}
+
+.social-icons a i:hover {
+  color: #ff64b4 !important;
+}
+

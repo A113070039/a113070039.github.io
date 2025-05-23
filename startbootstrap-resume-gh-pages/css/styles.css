@@ -11084,6 +11084,12 @@ body, p, h1, h2, h3, h4, h5, h6, .card-body, .resume-section-content {
   background-repeat: no-repeat;
 }
 #about .resume-section-content {
-  padding: 0 3rem; /* 上下 0，左右 3rem */
+  padding: 0 3rem;
 }
 
+<style>
+ .colored-bold {
+  color: #cc3366;
+  font-weight: bold;
+       }
+              </style>

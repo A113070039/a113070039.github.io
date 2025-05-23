@@ -11072,4 +11072,18 @@ body, p, h1, h2, h3, h4, h5, h6, .card-body, .resume-section-content {
 .social-icons a i:hover {
   color: #ff64b4 !important;
 }
+#about.resume-section {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#about .resume-section-content {
+  padding: 0 3rem; /* 上下 0，左右 3rem */
+}
 

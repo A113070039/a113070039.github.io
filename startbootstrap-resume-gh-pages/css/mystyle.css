@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  --bs-primary: #d6b5f3;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -10927,17 +10927,18 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #FF95CA;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #495057;
 }
 
 .dev-icons {
@@ -10969,4 +10970,123 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+#sideNav {
+  background-color: #d6b5f3 !important;
+}
+h1 {
+  color: #4b0082;
+}
+.text-id-blue {
+  color: #3498db;
+}
+.email-link {
+  color: #3498db;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+
+.bounce:hover {
+  animation: bounce 1s;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 350px;
+  perspective: 1000px;
+  border: 2px solid #66B3FF;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.flip-card-front {
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.flip-card-back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, .card-body, .resume-section-content {
+  font-family: 'Noto Serif TC', serif !important;
+}
+
+.flip-card-front {
+  color: #cc3366;
+  font-weight: bold;
+}
+
+.social-icons a i {
+  color: #FF95CA !important;
+  transition: color 0.3s;
+}
+
+.social-icons a i:hover {
+  color: #ff64b4 !important;
+}
+#about.resume-section {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#about .resume-section-content {
+  padding: 0 3rem;
+}
+#skills {
+  margin-top: 0 !important;
+  padding-top: 2rem; /* 可依需求調整 */
 }

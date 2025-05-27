@@ -11090,37 +11090,3 @@ body, p, h1, h2, h3, h4, h5, h6, .card-body, .resume-section-content {
   margin-top: 0 !important;
   padding-top: 2rem; /* 可依需求調整 */
 }
-.wrapper{
-  width:100%;
-}
-@media(max-width:992px){
- .wrapper{
-  width:100%;
-} 
-}
-.panel-heading {
-  padding: 0;
-	border:0;
-}
-.panel-title>a, .panel-title>a:active{
-	display:block;
-	padding:15px;
-  color:#555;
-  font-size:16px;
-  font-weight:bold;
-	text-transform:uppercase;
-	letter-spacing:1px;
-  word-spacing:3px;
-	text-decoration:none;
-}
-.panel-heading  a:before {
-   font-family: 'Glyphicons Halflings';
-   content: "\e114";
-   float: right;
-   transition: all 0.5s;
-}
-.panel-heading.active a:before {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
-}

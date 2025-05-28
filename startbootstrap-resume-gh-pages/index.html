@@ -197,47 +197,77 @@
             </section>
             <hr class="m-0" />
             <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <h2 class="mb-5">作品集</h2>
-                    <div class="subheading mb-3">這些是我從以前到現在有做過或拍過的一些作品，雖然不是很完美，都是第一次接觸時的作品，而我也不是專業攝影師，這些都是平常看到喜歡的風景或照片瞬間拍下的照片。</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                        
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
+<section class="resume-section" id="skills" style="margin-top: -30px;">
+  <div class="resume-section-content">
+    <h2 class="mb-5">作品集</h2>
+    <div class="subheading mb-4">
+      這些是我從以前到現在做過或拍過的一些作品，雖然不是很完美，都是第一次接觸時的作品。
+    </div>
+
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- 🔵 點點導航 -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="作品1"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="作品2"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="作品3"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="3" aria-label="作品4"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="4" aria-label="作品5"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="5" aria-label="作品6"></button>
+      </div>
+
+      <!-- 🖼️ 輪播內容 -->
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="assets/img/coffee1.jpg" class="d-block mx-auto portfolio-img" alt="作品1" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/coffee2.jpg" class="d-block mx-auto portfolio-img" alt="作品2" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/work3.jpg" class="d-block mx-auto portfolio-img" alt="作品3" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/work4.jpg" class="d-block mx-auto portfolio-img" alt="作品4" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/work5.jpg" class="d-block mx-auto portfolio-img" alt="作品5" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/work6.jpg" class="d-block mx-auto portfolio-img" alt="作品6" />
+        </div>
+      </div>
+
+      <!-- ◀️▶️ 左右箭頭 -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 🎨 CSS：讓圖片不被裁切、大小剛好 -->
+<style>
+  .portfolio-img {
+    max-height: 400px;
+    max-width: 100%;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 60% 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+</style>
             </section>
             <hr class="m-0" />
             <!-- Interests-->

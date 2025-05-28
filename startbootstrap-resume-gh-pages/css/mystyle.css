@@ -11086,3 +11086,10 @@ body, p, h1, h2, h3, h4, h5, h6, .card-body, .resume-section-content {
 #about .resume-section-content {
   padding: 0 3rem;
 }
+#skills {
+  margin-top: -30px; /* 可以從 -30px 開始試調整，根據實際畫面微調 */
+}
+#skills.resume-section {
+  padding-top: 0 !important;
+  padding-bottom: 50px; /* 如果你想要下面空白少一點 */
+}

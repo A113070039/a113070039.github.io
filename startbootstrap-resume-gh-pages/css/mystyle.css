@@ -11093,3 +11093,103 @@ body, p, h1, h2, h3, h4, h5, h6, .card-body, .resume-section-content {
   padding-top: 0 !important;
   padding-bottom: 50px; /* 如果你想要下面空白少一點 */
 }
+body {
+            background-color: #f0f2f5;
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .accordion-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .accordion-button {
+            padding: 20px 25px;
+            font-weight: 600;
+            color: #3498db;
+            background-color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #ffffff;
+            background-color:  #4b0082;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, .125);
+        }
+
+        .accordion-button::after {
+            background-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+        .accordion-body {
+            padding: 25px;
+            background-color: #ffffff;
+            color: #CC3366;
+        }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fdfdfd;
+}
+
+/* 🔶 Panel 容器設定 */
+.container {
+  display: flex;
+  gap: 20px;
+  height: 400px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* 🔷 單張圖片區塊 */
+.panel {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  flex: 0.5;
+  position: relative;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* 🔸 圖片標題 */
+.panel h3 {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 🔺 點選後放大 */
+.panel.active {
+  flex: 5;
+}

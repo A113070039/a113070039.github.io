@@ -39,3 +39,4 @@ $('.panel-collapse').on('show.bs.collapse', function () {
   $('.panel-collapse').on('hide.bs.collapse', function () {
     $(this).siblings('.panel-heading').removeClass('active');
   });
+  

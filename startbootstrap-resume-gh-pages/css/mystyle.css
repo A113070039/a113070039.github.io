@@ -11074,11 +11074,10 @@ body, p, h1, h2, h3, h4, h5, h6, .card-body, .resume-section-content {
 }
 #about.resume-section {
   width: 100vw;
-  max-width: 100vw;
+  max-width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url('../assets/img/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11165,8 +11164,9 @@ body {
 
 /* 🔷 單張圖片區塊 */
 .panel {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   border-radius: 10px;
   flex: 0.5;
   position: relative;
@@ -11187,9 +11187,30 @@ body {
   margin: 0;
   padding: 10px;
   text-align: center;
+  color: #fff;
 }
 
 /* 🔺 點選後放大 */
 .panel.active {
   flex: 5;
 }
+
+#sideNav {
+  width: 250px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-left: 250px !important;
+  }
+}
+
+html, body {
+  overflow-x: auto !important;
+}
+
+.resume-section {
+  overflow-x: auto;
+}
+
+
